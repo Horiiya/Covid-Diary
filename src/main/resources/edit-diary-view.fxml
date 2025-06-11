@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.covid19.controller.EditDiaryController">
+   <top>
+      <VBox prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="30.0" prefWidth="600.0" />
+            <Label prefHeight="57.0" prefWidth="600.0" text="                                                   EDIT DIARY" textAlignment="CENTER">
+               <font>
+                  <Font name="Leelawadee UI" size="18.0" />
+               </font>
+            </Label>
+            <Label prefHeight="5.0" prefWidth="600.0" />
+            <AnchorPane prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: #535f66;" />
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="302.0" prefWidth="69.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <VBox prefHeight="231.0" prefWidth="530.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="0.0" prefWidth="37.0" />
+            <HBox prefHeight="28.0" prefWidth="493.0">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="130.0" text="   DATE">
+                     <font>
+                        <Font name="Leelawadee UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="datePicker" prefWidth="188.0" promptText="Enter a date" />
+               </children>
+            </HBox>
+            <Label />
+            <HBox prefHeight="15.0" prefWidth="493.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="132.0" text="   PROVINCE">
+                     <font>
+                        <Font name="Leelawadee UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiceBox" prefHeight="26.0" prefWidth="187.0" style="-fx-background-color: #8e98a6;" />
+               </children>
+            </HBox>
+            <Label />
+            <HBox prefHeight="145.0" prefWidth="493.0">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="131.0" text="   CONTENT  ">
+                     <font>
+                        <Font name="Leelawadee UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="editText" prefHeight="145.0" prefWidth="316.0" wrapText="true">
+                     <font>
+                        <Font name="Leelawadee UI" size="13.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="58.0" prefWidth="446.0" />
+            <JFXButton onAction="#saveEditDiary" prefHeight="27.0" prefWidth="60.0" style="-fx-background-color: #8e98a6;" text="SAVE" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

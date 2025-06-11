@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.covid19.controller.CovidAlertController">
+    <center>
+        <VBox prefHeight="277.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="50.0" prefWidth="535.0" />
+                <HBox prefHeight="16.0" prefWidth="600.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="80.0" />
+                        <CheckBox fx:id="coughBox" mnemonicParsing="false" text="  Cough" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                        <Label prefHeight="17.0" prefWidth="152.0" />
+                        <CheckBox fx:id="feverBox" mnemonicParsing="false" prefHeight="18.0" prefWidth="82.0" text="  Fever" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                    </children>
+                </HBox>
+                <Label />
+                <HBox prefHeight="16.0" prefWidth="600.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="80.0" />
+                        <CheckBox fx:id="soreThroatBox" mnemonicParsing="false" text="  Sore throat" textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee UI" size="14.0" />
+                     </font></CheckBox>
+                        <Label prefHeight="17.0" prefWidth="125.0" />
+                        <CheckBox fx:id="tongueDoesNotTasteBox" mnemonicParsing="false" prefHeight="20.0" prefWidth="180.0" text="  Tongue does not taste" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                    </children>
+                </HBox>
+                <Label />
+                <HBox prefHeight="12.0" prefWidth="600.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="80.0" />
+                        <CheckBox fx:id="runnyNoseBox" mnemonicParsing="false" prefHeight="20.0" prefWidth="144.0" text="  Runny nose" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                        <Label prefHeight="17.0" prefWidth="84.0" />
+                        <CheckBox fx:id="tiredBox" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" text="  Tired" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                    </children>
+                </HBox>
+                <Label />
+                <HBox prefHeight="87.0" prefWidth="535.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="80.0" />
+                        <CheckBox fx:id="pantingBox" mnemonicParsing="false" text="  Panting" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                        <Label prefHeight="17.0" prefWidth="147.0" />
+                        <CheckBox fx:id="noSymptomsBox" mnemonicParsing="false" text="  No symptoms" textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee UI" size="14.0" />
+                     </font></CheckBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox prefHeight="79.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+            <children>
+            <AnchorPane prefHeight="86.0" prefWidth="246.0" />
+                <Button mnemonicParsing="false" onAction="#saveCovidAlert" prefHeight="0.0" prefWidth="60.0" text="SAVE" />
+            </children>
+        </HBox>
+    </bottom>
+   <top>
+      <VBox prefHeight="74.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="41.0" prefWidth="600.0" />
+            <HBox prefHeight="31.0" prefWidth="600.0">
+               <children>
+                  <AnchorPane prefHeight="37.0" prefWidth="131.0" />
+                  <ImageView fitHeight="37.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/error_four.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="51.0" prefWidth="221.0" text="        Symptoms Check" textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="37.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/error_four.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
